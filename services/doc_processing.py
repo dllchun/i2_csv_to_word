@@ -65,5 +65,3 @@ def generate_word_doc(combined_df: pd.DataFrame, language: str):
         doc.save(tmp.name)
         tmp.seek(0)
         return tmp.name
-
-    print(f"Document saved as {doc_name}")

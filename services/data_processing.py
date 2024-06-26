@@ -31,6 +31,10 @@ def merge_rows(df: pd.DataFrame) -> pd.DataFrame:
 def clean_group(group: any):
     for column in group.columns:
         if column not in ["Progress Update", "Status", "Title", "TempRef#"]:
+            # group.loc[group.index[1:], column] = (
+            # ""  # Clear all but the first row for each group
+            # )
+            group[column] = group[column].astype(str)
             group.loc[group.index[1:], column] = (
                 ""  # Clear all but the first row for each group
             )

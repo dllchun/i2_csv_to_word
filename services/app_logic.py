@@ -24,13 +24,15 @@ def generate_documents(uploaded_files):
         en_df, tc_df, sc_df = None, None, None
 
         for file in uploaded_files:
-            if "EN" in file.name.upper():
+            filename: str = file.name.upper().strip()
+
+            if filename.startswith("EN"):
                 en_df = process_csv(file, "EN")
 
-            elif "TC" in file.name.upper():
+            elif filename.startswith("TC"):
                 tc_df = process_csv(file, "TC")
 
-            elif "SC" in file.name.upper():
+            elif filename.startswith("SC"):
                 sc_df = process_csv(file, "SC")
 
         # Only EN and TC version
