@@ -52,7 +52,7 @@ def generate_documents(uploaded_files):
                 ]
             ]
 
-            doc_name = generate_word_doc(en_tc_version_filtered, "EN_TC_Word_Document")
+            doc_name = generate_word_doc(en_tc_version_filtered, "en_tc")
 
             st.session_state.generated_files["en_tc"] = doc_name
             st.success("EN, TC document generated successfully.")
@@ -72,9 +72,7 @@ def generate_documents(uploaded_files):
                         "Status",
                     ]
                 ]
-                doc_name = generate_word_doc(
-                    en_tc_sc_version_filtered, "All_Word_Document"
-                )
+                doc_name = generate_word_doc(en_tc_sc_version_filtered, "all")
                 st.session_state.generated_files["all"] = doc_name
                 st.success("All (EN, TC, and SC) Word document generated successfully.")
 
