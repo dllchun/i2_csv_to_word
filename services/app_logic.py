@@ -109,7 +109,7 @@ def download_buttons():
             st.download_button(
                 label="Download EN & TC Word Document",
                 data=file,
-                file_name="EN_TC_Word_Document.docx",
+                file_name="tc_eng_smartcity_initiative_dtls.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             )
 
@@ -118,6 +118,6 @@ def download_buttons():
             st.download_button(
                 label="Download Full version document",
                 data=file,
-                file_name="All_Word_Document.docx",
+                file_name="tc_sc_eng_smartcity_initiative_dtls.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             )

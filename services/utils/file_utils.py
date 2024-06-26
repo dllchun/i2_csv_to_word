@@ -23,7 +23,7 @@ def translate_header(df: pd.DataFrame, language: str) -> pd.DataFrame:
                 "SM_Ref": "SM_Ref#",
                 "參考#": "Ref#",
                 "智慧範疇": "Smart Area",
-                "措施组合": "Initiative Group",
+                "措施組合": "Initiative Group",
                 "措施": "Initiative",
                 "進度": "Progress Update",
                 "狀況": "Status",

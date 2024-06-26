@@ -24,7 +24,7 @@ def generate_word_doc(combined_df: pd.DataFrame, language: str):
     column_names = [
         f"Ref#\n參考#",
         f"Smart Area\n智慧範疇",
-        f"Initiative Group\n措施组合",
+        f"Initiative Group\n措施組合",
         f"Initiative\n措施",
         f"Progress Update\n進度",
         f"In progress / Completed/ Ongoing\n進行中/ 已完成 / 持續進行",
